@@ -1,0 +1,9 @@
+{
+  "name": "gamespeak",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/site.test.mjs"
+  },
+  "license": "MIT"
+}

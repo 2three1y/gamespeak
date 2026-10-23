@@ -1,0 +1,63 @@
+{
+ "width": 800,
+ "height": 450,
+ "items": [
+  {
+   "text": "HP 42/50",
+   "x": 24,
+   "y": 18,
+   "w": 110,
+   "h": 24
+  },
+  {
+   "text": "GOLD 120",
+   "x": 660,
+   "y": 18,
+   "w": 116,
+   "h": 24
+  },
+  {
+   "text": "Hey! You're finally",
+   "x": 470,
+   "y": 120,
+   "w": 250,
+   "h": 26
+  },
+  {
+   "text": "awake. The bridge",
+   "x": 470,
+   "y": 152,
+   "w": 236,
+   "h": 26
+  },
+  {
+   "text": "is out again.",
+   "x": 470,
+   "y": 184,
+   "w": 170,
+   "h": 26
+  },
+  {
+   "text": "OLD MAN: Take this lantern,",
+   "x": 60,
+   "y": 330,
+   "w": 420,
+   "h": 28
+  },
+  {
+   "text": "it's dangerous to go",
+   "x": 60,
+   "y": 366,
+   "w": 320,
+   "h": 28
+  },
+  {
+   "text": "alone at night. \u25bc",
+   "x": 60,
+   "y": 402,
+   "w": 270,
+   "h": 28
+  }
+ ],
+ "note": "Hand-made sample with known text positions, so the reader and layout modes can be tried in any browser."
+}

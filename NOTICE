@@ -1,0 +1,10 @@
+GameSpeak
+Copyright (c) 2026 Carter (2three1y). MIT License, see LICENSE.
+
+No third-party code is included. Text reading uses the browser's built-in
+TextDetector (Shape Detection API) where the browser has it, and speech uses the
+browser's Web Speech API.
+
+Idea credit: GameOCRTTS by MrFlapstaart (https://github.com/MrFlapstaart/GameOCRTTS),
+licensed AGPL-3.0. GameSpeak reuses the idea (read game text bubbles aloud, clean
+OCR "garbage") and none of its code, so GameSpeak stays MIT.

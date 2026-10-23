@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameSpeak: hear the text in game screenshots</title>
+<meta name="description" content="Pick or paste a game screenshot and GameSpeak reads the on-screen text bubbles aloud, top to bottom. By Carter (2three1y).">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to GameSpeak</a>
+<header class="masthead">
+  <p class="eyebrow">Carter (2three1y) presents</p>
+  <h1>GameSpeak</h1>
+  <p class="tagline">Pick a game screenshot and hear its text bubbles, top to bottom.</p>
+</header>
+
+<main id="main">
+  <section class="panel" aria-labelledby="pick-h">
+    <h2 id="pick-h">1. Pick a screenshot</h2>
+    <div class="controls">
+      <button type="button" class="big primary" id="choose">Choose screenshot</button>
+      <input type="file" id="file" accept="image/*" hidden>
+      <button type="button" class="big" id="paste-img">Paste screenshot</button>
+      <button type="button" class="big" id="sample">Try the sample</button>
+    </div>
+    <p class="hint">You can also paste an image anywhere on the page with Control or Command plus V, or drop one here.</p>
+    <div id="drop" class="drop">
+      <img id="preview" alt="" hidden>
+      <p id="drop-hint">No screenshot yet.</p>
+    </div>
+    <p id="ocr-state" class="state"></p>
+  </section>
+
+  <section class="panel" aria-labelledby="gap-h" id="gap" hidden>
+    <h2 id="gap-h">This browser can't read text from pictures yet</h2>
+    <p>GameSpeak reads text with the browser's own built-in text detector. Your browser doesn't have it, and no open source text-recognition library is in the starred repos, so there is nothing safe to ship in its place yet.</p>
+    <p>What works today:</p>
+    <ul>
+      <li>On iPhone, open the screenshot in Photos, use Live Text and choose Copy All, then paste it in the box below.</li>
+      <li>VoiceOver can also recognize text in images on its own.</li>
+      <li>In desktop Chrome, turning on "Experimental Web Platform features" in chrome://flags can enable the text detector.</li>
+    </ul>
+  </section>
+
+  <section class="panel" aria-labelledby="paste-h">
+    <h2 id="paste-h">Or paste the text</h2>
+    <label for="pasted">Game text</label>
+    <textarea id="pasted" rows="4" placeholder="Paste text here. A blank line starts a new bubble."></textarea>
+    <div class="controls">
+      <button type="button" class="big" id="use-text">Read this text</button>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="read-h">
+    <h2 id="read-h">2. Listen</h2>
+    <p id="summary" class="state">Nothing loaded yet.</p>
+    <div class="controls" role="group" aria-label="Reader controls">
+      <button type="button" class="big" id="prev">Previous line</button>
+      <button type="button" class="big primary" id="repeat">Read line</button>
+      <button type="button" class="big" id="next">Next line</button>
+      <button type="button" class="big" id="all">Read all</button>
+      <button type="button" class="big" id="stop">Stop</button>
+      <button type="button" class="big" id="layout">Describe layout</button>
+    </div>
+    <p class="hint">Keys: N next line, P previous, R repeat, A read all, L describe layout, Escape stop.</p>
+    <h3>Lines</h3>
+    <ol id="lines" class="lines"></ol>
+  </section>
+
+  <section class="panel" aria-labelledby="set-h">
+    <h2 id="set-h">Settings</h2>
+    <div class="check">
+      <input type="checkbox" id="vo-mode">
+      <label for="vo-mode">Let VoiceOver read the lines (moves focus to each line instead of using the speech voice)</label>
+    </div>
+    <div class="check">
+      <input type="checkbox" id="fix-caps" checked>
+      <label for="fix-caps">Turn ALL CAPS game text into normal sentences</label>
+    </div>
+    <div class="grid">
+      <div class="field">
+        <label for="voice">Speech voice</label>
+        <select id="voice"><option value="">Default voice</option></select>
+      </div>
+      <div class="field">
+        <label for="rate">Speed</label>
+        <input type="range" id="rate" min="0.6" max="2" step="0.1" value="1">
+        <output id="rate-out" for="rate" aria-hidden="true">1×</output>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p>GameSpeak is inspired by GameOCRTTS, a Windows app that reads speech bubbles in games. It reuses the idea only, none of its code. Nothing you pick leaves your device.</p>
+    <p><a href="credits.html">Starred credits and licenses</a></p>
+  </section>
+</main>
+<footer><p>Made by Carter (2three1y). <a href="https://github.com/2three1y/gamespeak">Source on GitHub</a>.</p></footer>
+<div id="announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

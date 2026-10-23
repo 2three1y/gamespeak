@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" font-family="Courier New, monospace">
+<rect width="800" height="450" fill="#1d3b2a"/>
+<rect y="250" width="800" height="200" fill="#2f5d3a"/>
+<circle cx="300" cy="230" r="26" fill="#f2c28b"/><rect x="280" y="256" width="40" height="60" fill="#3a6ee8"/>
+<path d="M455 100 h290 a14 14 0 0 1 14 14 v100 a14 14 0 0 1 -14 14 h-200 l-40 30 l8 -30 h-58 a14 14 0 0 1 -14 -14 v-100 a14 14 0 0 1 14 -14z" fill="#fff" stroke="#000" stroke-width="3"/>
+<rect x="40" y="310" width="720" height="130" rx="10" fill="#0a0a40" stroke="#fff" stroke-width="4"/>
+<text x="24" y="36" font-size="20" fill="#fff">HP 42/50</text>
+<text x="660" y="36" font-size="20" fill="#000">GOLD 120</text>
+<text x="470" y="140" font-size="22" fill="#000">Hey! You&#x27;re finally</text>
+<text x="470" y="172" font-size="22" fill="#000">awake. The bridge</text>
+<text x="470" y="204" font-size="22" fill="#000">is out again.</text>
+<text x="60" y="352" font-size="23" fill="#fff">OLD MAN: Take this lantern,</text>
+<text x="60" y="388" font-size="23" fill="#fff">it&#x27;s dangerous to go</text>
+<text x="60" y="424" font-size="23" fill="#fff">alone at night. ▼</text>
+</svg>

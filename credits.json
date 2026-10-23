@@ -1,0 +1,54 @@
+{
+  "project": "GameSpeak",
+  "license": "MIT",
+  "author": "Carter (2three1y)",
+  "credits": [
+    {
+      "name": "GameOCRTTS",
+      "repo": "https://github.com/MrFlapstaart/GameOCRTTS",
+      "author": "MrFlapstaart",
+      "license": "AGPL-3.0",
+      "used_for": "the idea only: reading game text bubbles aloud and cleaning up OCR garbage. No code copied, so GameSpeak stays MIT.",
+      "starred": "checked Oct 23, 2026"
+    }
+  ],
+  "considered_not_used": [
+    {
+      "name": "SwiftOCR",
+      "repo": "https://github.com/NMAC427/SwiftOCR",
+      "license": "Apache-2.0",
+      "why": "Swift for iOS and macOS apps, can't run in a web page."
+    },
+    {
+      "name": "GLM-OCR",
+      "repo": "https://github.com/zai-org/GLM-OCR",
+      "license": "Apache-2.0",
+      "why": "A large Python model that needs a server or GPU."
+    },
+    {
+      "name": "DeepSeek-OCR",
+      "repo": "https://github.com/deepseek-ai/DeepSeek-OCR",
+      "license": "MIT",
+      "why": "A large Python model that needs a GPU."
+    },
+    {
+      "name": "DeepSeek-OCR-2",
+      "repo": "https://github.com/deepseek-ai/DeepSeek-OCR-2",
+      "license": "Apache-2.0",
+      "why": "Same: Python and a GPU."
+    },
+    {
+      "name": "ocr_digital_screen_reader",
+      "repo": "https://github.com/emirbaycan/ocr_digital_screen_reader",
+      "license": "GPL-3.0",
+      "why": "Python, and only reads digits on device screens."
+    },
+    {
+      "name": "CK3-OCR",
+      "repo": "https://github.com/Agamidae/CK3-OCR",
+      "license": "No license",
+      "why": "AutoHotkey for Windows, and no license."
+    }
+  ],
+  "gap": "No browser OCR library (like Tesseract.js) is in the starred list, so GameSpeak uses the browser's built-in TextDetector where it exists. Most browsers, including iPhone Safari, don't have it yet."
+}
